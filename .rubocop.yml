@@ -4,10 +4,15 @@ require:
   - rubocop-rspec
 
 AllCops:
+  TargetRubyVersion: 2.6
   Exclude:
     - 'db/**/*'
     - 'script/**/*'
     - 'bin/**/*'
+    - 'node_modules/**/*'
+
+Style/ClassAndModuleChildren:
+  Enabled: false
 
 Metrics/LineLength:
   Max: 120
